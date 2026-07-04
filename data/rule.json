@@ -1,0 +1,52 @@
+[
+  {
+    "chunk_id": "rule_001",
+    "section": "Form I - Immovable Property Transactions",
+    "content": "Form I is used for giving prior intimation or seeking previous sanction under Rule 18(2) of the CCS (Conduct) Rules, 1964 for acquisition or disposal of immovable property."
+  },
+  {
+    "chunk_id": "rule_002",
+    "section": "Immovable Property Details",
+    "content": "The applicant must provide property details including location, description, ownership status, nature of interest, ownership share, market value, and source of finance."
+  },
+  {
+    "chunk_id": "rule_003",
+    "section": "Immovable Property Transaction Party",
+    "content": "The applicant must disclose the name and address of the party involved in the transaction, relationship with the party, official dealings, and method of arranging the transaction."
+  },
+  {
+    "chunk_id": "rule_004",
+    "section": "Immovable Property Declaration",
+    "content": "The applicant must declare that the information furnished is true and either seek permission or provide prior intimation for acquisition or disposal of immovable property."
+  },
+  {
+    "chunk_id": "rule_005",
+    "section": "Immovable Property Submission Rule",
+    "content": "Applications requiring previous sanction must be submitted at least 30 days before the proposed date of transaction."
+  },
+  {
+    "chunk_id": "rule_006",
+    "section": "Form II - Movable Property Transactions",
+    "content": "Form II is used for giving prior intimation or seeking previous sanction under Rule 18(3) of the CCS (Conduct) Rules, 1964 for acquisition or disposal of movable property."
+  },
+  {
+    "chunk_id": "rule_007",
+    "section": "Movable Property Details",
+    "content": "The applicant must provide details of movable property such as vehicles, jewellery, appliances, loans, insurance policies, ownership status, transaction value, and source of finance."
+  },
+  {
+    "chunk_id": "rule_008",
+    "section": "Movable Property Transaction Party",
+    "content": "The applicant must disclose details of the party involved in the transaction, relationship with the party, official dealings, and method of arranging the transaction."
+  },
+  {
+    "chunk_id": "rule_009",
+    "section": "Movable Property Declaration",
+    "content": "The applicant must certify the correctness of the information and either seek sanction or provide intimation regarding the transaction."
+  },
+  {
+    "chunk_id": "rule_010",
+    "section": "Movable Property Submission Rule",
+    "content": "Where previous sanction is required, the application should be submitted at least 30 days before the proposed transaction date."
+  }
+]

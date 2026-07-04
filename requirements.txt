@@ -1,0 +1,10 @@
+chromadb
+sentence-transformers
+rank-bm25
+ollama
+streamlit
+pypdf
+sqlalchemy
+psycopg2-binary
+python-dotenv
+bcrypt

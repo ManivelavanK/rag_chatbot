@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg:        #071126;
+  --surface:   #0B1726;
+  --border:    #162436;
+  --border2:   #223647;
+  --primary:   #1E3A8A;
+  --primary-h: #163063;
+  --primary-s: rgba(30,58,138,0.18);
+  --text:      #E2E8F0;
+  --text2:     #94A3B8;
+  --text4:     #7E93AB;
+  --font:      'Inter', system-ui, sans-serif;
+  --radius:    12px;
+  --shadow-xs: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+#MainMenu, footer, header,
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+[data-testid="stStatusWidget"],
+[data-testid="stHeader"],
+[data-testid="stSidebarHeader"] { display: none !important; }
+
+html, body, .stApp,
+[data-testid="stApp"],
+[data-testid="stAppViewContainer"],
+[data-testid="stAppViewContainer"] > section,
+[data-testid="stMain"],
+[data-testid="stMainBlockContainer"],
+[data-testid="stVerticalBlock"],
+.main, .block-container {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: var(--font) !important;
+}
+
+[data-testid="stMainBlockContainer"],
+.block-container {
+  max-width: 780px !important;
+  margin: 0 auto !important;
+  padding-top: 1rem !important;
+  padding-bottom: 5rem !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
+
+/* Messages */
+.msg-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin: 10px 0;
+  animation: slideUp 0.2s ease;
+}
+.msg-row-user      { justify-content: flex-end; }
+.msg-row-assistant { justify-content: flex-start; }
+
+.msg-col-user { display: flex; flex-direction: column; align-items: flex-end;   max-width: 75%; }
+.msg-col-ai   { display: flex; flex-direction: column; align-items: flex-start; max-width: 85%; }
+
+.avatar {
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 700; flex-shrink: 0;
+}
+.avatar-user { background: var(--primary); color: #fff !important; order: 2; font-size: 0.7rem; }
+.avatar-ai   { background: var(--surface) !important; border: 1px solid var(--border); font-size: 0.95rem; }
+
+.bubble {
+  padding: 11px 15px;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  word-break: break-word;
+}
+.bubble-user {
+  background: var(--primary) !important;
+  color: #fff !important;
+  border-bottom-right-radius: 3px !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+.bubble-ai {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-bottom-left-radius: 3px !important;
+  box-shadow: var(--shadow-xs) !important;
+}
+.bubble-ai * { color: var(--text) !important; }
+
+.msg-meta { font-size: 0.64rem; color: var(--text4) !important; margin-top: 4px; padding: 0 2px; }
+.msg-meta-right { text-align: right; }
+.msg-meta-left  { text-align: left; }
+
+/* Typing indicator */
+.typing-indicator { display: flex; align-items: flex-end; gap: 8px; margin: 10px 0; }
+.ai-avatar-sm {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--surface) !important;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem; flex-shrink: 0;
+}
+.typing-bubble {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius);
+  border-bottom-left-radius: 3px;
+  padding: 11px 16px;
+  display: flex; align-items: center; gap: 4px;
+}
+.typing-bubble span {
+  width: 5px; height: 5px;
+  background: var(--primary) !important;
+  border-radius: 50%;
+  animation: typingDot 1.2s ease-in-out infinite;
+  color: transparent !important;
+}
+.typing-bubble span:nth-child(2) { animation-delay: 0.2s; }
+.typing-bubble span:nth-child(3) { animation-delay: 0.4s; }
+
+/* Chat input */
+[data-testid="stBottom"],
+[data-testid="stBottom"] > div,
+[data-testid="stChatInputContainer"],
+[data-testid="stChatInputContainer"] > div {
+  background: var(--bg) !important;
+  border-top: 1px solid var(--border) !important;
+  padding-bottom: 14px !important;
+  padding-top: 10px !important;
+}
+[data-testid="stChatInput"],
+[data-testid="stChatInput"] > div {
+  background: var(--surface) !important;
+  border: 1.5px solid var(--border2) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--shadow-sm) !important;
+  max-width: 780px !important;
+  margin: 0 auto !important;
+}
+[data-testid="stChatInput"]:focus-within {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px var(--primary-s), var(--shadow-sm) !important;
+}
+[data-testid="stChatInput"] textarea,
+[data-testid="stChatInput"] input {
+  background: transparent !important;
+  color: var(--text) !important;
+  caret-color: #fff !important;
+  font-size: 0.9rem !important;
+  font-family: var(--font) !important;
+  padding: 12px 14px !important;
+}
+[data-testid="stChatInput"] textarea::placeholder { color: var(--text4) !important; }
+[data-testid="stChatInput"] button {
+  background: var(--primary) !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+  margin: 5px 7px 5px 0 !important;
+  padding: 6px !important;
+}
+[data-testid="stChatInput"] button:hover { background: var(--primary-h) !important; }
+
+/* Markdown */
+.stMarkdown p, .stMarkdown li { color: var(--text) !important; font-size: 0.9rem !important; line-height: 1.7 !important; }
+
+/* Animations */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes typingDot {
+  0%, 60%, 100% { transform: translateY(0);    opacity: 0.3; }
+  30%            { transform: translateY(-4px); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .msg-col-user { max-width: 88%; }
+  .msg-col-ai   { max-width: 92%; }
+  .bubble       { font-size: 0.85rem; padding: 9px 12px; }
+}

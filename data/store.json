@@ -1,0 +1,121 @@
+{
+  "users": {},
+  "conversations": {
+    "1": {
+      "user_id": "guest",
+      "title": "New Chat",
+      "updated_at": "2026-07-04T21:27:15.543836"
+    },
+    "2": {
+      "user_id": "guest",
+      "title": "New Chat",
+      "updated_at": "2026-07-04T21:32:53.586477"
+    }
+  },
+  "messages": {
+    "1": [
+      {
+        "role": "user",
+        "content": "what is ccl",
+        "timestamp": "09:27 PM"
+      },
+      {
+        "role": "assistant",
+        "content": "\u26a0\ufe0f Error contacting model: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+        "timestamp": "09:27 PM",
+        "chunks": [
+          {
+            "source": "leave_rule_3_extracted.json",
+            "section": "Child Care Leave",
+            "content": "CCL may be extended to single male parents including unmarried, widower, and divorcee employees.",
+            "score": 5.160262584686279,
+            "confidence": "Medium"
+          },
+          {
+            "source": "leave_rule_3_extracted.json",
+            "section": "Child Care Leave",
+            "content": "CCL may be granted at 100% leave salary for the first 365 days and 80% leave salary for the next 365 days.",
+            "score": 1.9097117185592651,
+            "confidence": "Low"
+          },
+          {
+            "source": "leave_rule_3_extracted.json",
+            "section": "Child Care Leave",
+            "content": "Single female Government servants may avail CCL in six spells per calendar year. Other eligible Government servants may avail a maximum of three spells per calendar year.",
+            "score": 0.593990683555603,
+            "confidence": "Low"
+          },
+          {
+            "source": "rule.json",
+            "section": "Form II - Movable Property Transactions",
+            "content": "Form II is used for giving prior intimation or seeking previous sanction under Rule 18(3) of the CCS (Conduct) Rules, 1964 for acquisition or disposal of movable property.",
+            "score": -4.246932506561279,
+            "confidence": "Low"
+          }
+        ],
+        "diag": {
+          "vec_hits": 10,
+          "bm25_hits": 10,
+          "merged": 16,
+          "final": 4,
+          "ms": 6022,
+          "queries": [
+            "what is ccl"
+          ]
+        }
+      }
+    ],
+    "2": [
+      {
+        "role": "user",
+        "content": "Tell me about Academic Calendar at NIT Calicut",
+        "timestamp": "09:32 PM"
+      },
+      {
+        "role": "assistant",
+        "content": "\u26a0\ufe0f Error contacting model: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download",
+        "timestamp": "09:32 PM",
+        "chunks": [
+          {
+            "source": "NIT_policy.json",
+            "section": "Types of Identity Cards",
+            "content": "NIT Calicut issues Student ID Cards, Regular Faculty and Staff ID Cards, Ad-hoc and Contract Staff ID Cards, Pensioner ID Cards, and Visitor ID Cards.",
+            "score": -0.7189023494720459,
+            "confidence": "Low"
+          },
+          {
+            "source": "NIT_policy.json",
+            "section": "Mandatory Usage",
+            "content": "All faculty, staff, and students must wear their identity cards at all times while on the NIT Calicut campus and produce them when requested by authorized personnel.",
+            "score": -1.5339694023132324,
+            "confidence": "Low"
+          },
+          {
+            "source": "recruitment_rule_1.json",
+            "section": "Background",
+            "content": "The Recruitment Rules for Non-Teaching staff in NITs were initially issued on 20 December 2017 following approval by the Council of NITSER.",
+            "score": -7.858272075653076,
+            "confidence": "Low"
+          },
+          {
+            "source": "recruitment_rule_2.json",
+            "section": "Reference to Recruitment Rules 2019",
+            "content": "The Ministry referred to its communication dated 20 February 2019 through which the recommendations of the Oversight Committee and the Recruitment Rules (2019) for Non-Teaching Staff of NITs were issued for implementation after approval by the respective Boards of Governors.",
+            "score": -8.434173583984375,
+            "confidence": "Low"
+          }
+        ],
+        "diag": {
+          "vec_hits": 10,
+          "bm25_hits": 10,
+          "merged": 17,
+          "final": 4,
+          "ms": 11918,
+          "queries": [
+            "Tell me about Academic Calendar at NIT Calicut"
+          ]
+        }
+      }
+    ]
+  }
+}
